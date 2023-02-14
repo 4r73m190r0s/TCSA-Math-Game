@@ -3,11 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TCSA_MathGame.Models;
 
 namespace TCSA_MathGame
 {
     internal class Helpers
     {
+        internal static void GetGames()
+        {
+            Console.Clear();
+            Console.WriteLine("Games History:");
+            Console.WriteLine("--------------");
+            foreach (var game in GameEngine.games)
+            {
+                Console.WriteLine(game);
+            }
+            Console.WriteLine("--------------");
+            Console.WriteLine("Press Any Key to Return to the Main Menu");
+            Console.ReadLine();
+        }
         internal static string GetName()
         {
             Console.WriteLine("Enter your name: ");
@@ -47,5 +61,6 @@ namespace TCSA_MathGame
             numbers[1] = secondNumber;
             return numbers;
         }
+
     }
 }

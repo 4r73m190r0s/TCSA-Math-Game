@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TCSA_MathGame;
+using TCSA_MathGame.Models;
 using static System.Formats.Asn1.AsnWriter;
 
 namespace TCSA_MathGame
@@ -45,6 +46,8 @@ namespace TCSA_MathGame
 
             Console.WriteLine("\nGame Over");
             Console.WriteLine($"Your Final Score Is {score}.");
+
+            games.Add(new Game() { Score = score, Type = GameType.Addition, Date = DateTime.Now });
         }
         internal static void SubtractionGame()
         {
@@ -81,6 +84,8 @@ namespace TCSA_MathGame
 
             Console.WriteLine("\nGame Over");
             Console.WriteLine($"Your Final Score Is {score}.");
+
+            games.Add(new Game() { Score = score, Type = GameType.Subtraction, Date = DateTime.Now });
         }
         internal static void MultiplicationGame()
         {
@@ -117,6 +122,8 @@ namespace TCSA_MathGame
 
             Console.WriteLine("\nGame Over");
             Console.WriteLine($"Your Final Score Is {score}.");
+
+            games.Add(new Game() { Score = score, Type = GameType.Multiplication, Date = DateTime.Now });
         }
         internal static void DivisionGame()
         {
@@ -149,6 +156,10 @@ namespace TCSA_MathGame
 
             Console.WriteLine("\nGame Over");
             Console.WriteLine($"Your Final Score Is {score}.");
+
+            games.Add(new Game() { Score = score, Type = GameType.Division, Date = DateTime.Now });
         }
+
+        internal static List<Game> games = new List<Game>();
     }
 }

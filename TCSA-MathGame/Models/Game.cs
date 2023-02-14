@@ -8,9 +8,14 @@ namespace TCSA_MathGame.Models
 {
     internal class Game
     {
-        public int SCore { get; set; }
+        public int Score { get; set; }
         public GameType Type { get; set; }
         public DateTime Date { get; set; }
+
+        public override string ToString()
+        {
+            return $"Game: {Type} | Score: {Score} | Date: {Date}";
+        }
     }
 
     internal enum GameType

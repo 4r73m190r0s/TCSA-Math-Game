@@ -11,33 +11,49 @@ namespace TCSA_MathGame
         internal void ShowMenu(string name, DateTime date)
         {
             Console.WriteLine("--------------------------");
-            Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}.");
-            Console.WriteLine(@$"Choose the game:
-            A - Addition
-            B - Subtraction
-            C - Multiplication
-            D - Division
-            V - View Previous Games
-            Q - Quit");
-            Console.WriteLine("--------------------------");
+            Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}.\n");
 
-            string gameSelected = Console.ReadLine();
+            bool isGameON = true;
 
-            switch (gameSelected.Trim().ToUpper())
+            do
             {
-                case "A":
-                    GameEngine.AdditionGame();
-                    break;
-                case "B":
-                    GameEngine.SubtractionGame();
-                    break;
-                case "C":
-                    GameEngine.MultiplicationGame();
-                    break;
-                case "D":
-                    GameEngine.DivisionGame();
-                    break;
-            }
+                Console.WriteLine(@$"Choose the game:
+                A - Addition
+                B - Subtraction
+                C - Multiplication
+                D - Division
+                V - View Previous Games
+                Q - Quit");
+                Console.WriteLine("--------------------------");
+
+                string gameSelected = Console.ReadLine();
+
+                switch (gameSelected.Trim().ToUpper())
+                {
+                    case "A":
+                        GameEngine.AdditionGame();
+                        break;
+                    case "B":
+                        GameEngine.SubtractionGame();
+                        break;
+                    case "C":
+                        GameEngine.MultiplicationGame();
+                        break;
+                    case "D":
+                        GameEngine.DivisionGame();
+                        break;
+                    case "V":
+                        Helpers.GetGames();
+                        break;
+                    case "Q":
+                        Console.WriteLine("Goodbye");
+                        isGameON = false;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
+                } 
+            } while (isGameON);
         }
     }
 }
