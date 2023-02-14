@@ -1,0 +1,15 @@
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\bin\Debug\net6.0\TCSA-MathGame.exe
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\bin\Debug\net6.0\TCSA-MathGame.deps.json
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\bin\Debug\net6.0\TCSA-MathGame.runtimeconfig.json
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\bin\Debug\net6.0\TCSA-MathGame.dll
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\bin\Debug\net6.0\TCSA-MathGame.pdb
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.csproj.AssemblyReference.cache
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.AssemblyInfoInputs.cache
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.AssemblyInfo.cs
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.csproj.CoreCompileInputs.cache
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.dll
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\refint\TCSA-MathGame.dll
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.pdb
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\TCSA-MathGame.genruntimeconfig.cache
+C:\Users\Mechkalito\source\repos\TCSA-MathGame\TCSA-MathGame\obj\Debug\net6.0\ref\TCSA-MathGame.dll
