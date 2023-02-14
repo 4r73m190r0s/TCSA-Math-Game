@@ -20,7 +20,6 @@ namespace TCSA_MathGame
 
             return name;
         }
-
         internal static string ValidateResult(string result)
         {
             while (string.IsNullOrEmpty(result) || !Int32.TryParse(result, out _))
@@ -29,6 +28,24 @@ namespace TCSA_MathGame
                 result = Console.ReadLine();
             }
             return result;
+        }
+        internal static int[] GetDivisionNumbers()
+        {
+            var random = new Random();
+            int firstNumber = random.Next(1, 99);
+            int secondNumber = random.Next(1, 99);
+
+            var numbers = new int[2];
+
+            while (firstNumber % secondNumber != 0)
+            {
+                firstNumber = random.Next(1, 99);
+                secondNumber = random.Next(1, 99);
+            }
+
+            numbers[0] = firstNumber;
+            numbers[1] = secondNumber;
+            return numbers;
         }
     }
 }

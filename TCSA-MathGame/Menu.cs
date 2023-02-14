@@ -31,6 +31,12 @@ namespace TCSA_MathGame
                 case "B":
                     GameEngine.SubtractionGame();
                     break;
+                case "C":
+                    GameEngine.MultiplicationGame();
+                    break;
+                case "D":
+                    GameEngine.DivisionGame();
+                    break;
             }
         }
     }
