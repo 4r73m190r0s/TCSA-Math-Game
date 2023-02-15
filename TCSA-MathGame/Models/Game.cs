@@ -14,7 +14,7 @@ namespace TCSA_MathGame.Models
 
         public override string ToString()
         {
-            return $"Game: {Type} | Score: {Score} | Date: {Date}";
+            return $"Game: {Type,-20} Score: {Score,-10} Date: {Date,-15:f}";
         }
     }
 
