@@ -39,6 +39,7 @@ namespace TCSA_MathGame
             while (string.IsNullOrEmpty(result) || !Int32.TryParse(result, out _))
             {
                 Console.WriteLine("Your answer needs to be an integer. Try again.");
+                Console.Write("X = ");
                 result = Console.ReadLine();
             }
             return result;

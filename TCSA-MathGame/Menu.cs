@@ -11,13 +11,14 @@ namespace TCSA_MathGame
         internal void ShowMenu(string name, DateTime date)
         {
             Console.WriteLine("--------------------------");
-            Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}.\n");
+            Console.WriteLine($"Hello {name.ToUpper()}. It's {date.DayOfWeek}.");
 
             bool isGameON = true;
 
             do
             {
-                Console.WriteLine(@$"Choose the game:
+                Console.WriteLine();
+                Console.WriteLine(@$"Choose the Game:
                 A - Addition
                 B - Subtraction
                 C - Multiplication
